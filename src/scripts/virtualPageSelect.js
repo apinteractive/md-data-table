@@ -11,7 +11,7 @@ function virtualPageSelect() {
     self.pages = [];
 
     function getMin(pages, total) {
-      return Math.min(pages, isFinite(total) && isPositive(total) ? total : 1);
+      return total;
     }
 
     function isPositive(number) {
